@@ -14,13 +14,18 @@ You will find this is far easier than the opposite task of using CSS to cram you
 /*********************************************************************
   YOUR MOBILE/BASE STYLES GO HERE
 *********************************************************************/
+.container {
+    margin: auto;
+}
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
     font-size: 14px;
-    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 background 
@@ -28,7 +33,6 @@ background
 img {
 display: block;
 align-content: center;
-max-width: 100px;
 }
 
 /* Change alignment of heading titles */
@@ -49,15 +53,25 @@ font-family: 'Lora', serif;
 }
 
 body {
-    margin: 50px;
     background-color: white;
 }
 
+.container-photo {
+    margin-top: 0 auto;
+    margin-bottom: 0 auto; 
+    display: block;
+    padding: 0 auto;
+}
+
 .container.photo > img {
-    max-width: 300px;
     padding: 0px;
     align-content: center;
+    object-fit: contain;
+    max-width: 800px;
+    width: 85%;
     }
+
+
 
 /* Decrease space in byline/date section */
 
@@ -69,14 +83,10 @@ body {
 /* Adjust map settings */
 
 .map {
-max-width: 300px;
-padding-right: 40px;
-padding-left: 40px;
-padding-top: 10px;
-padding-bottom: 10px;
 align-content: center;
 border: black;
 }
+
 
 
 /*********************************************************************
@@ -86,16 +96,27 @@ border: black;
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
 
+.container {
+    margin: auto;
+}
+
+.container.photo {
+    margin-top: 0 auto;
+    margin-bottom: 0 auto; 
+    display: block;
+    padding: 0 auto;
+}
+
 .container.photo > img {
-    max-width: 650px;
-    padding-left: 5px;
+    padding: 0px;
     align-content: center;
+    object-fit: contain;
+    max-width: 800px;
     }
 
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
-    max-width: 900px;
 }
 
     body {
@@ -104,7 +125,6 @@ html, body {
 }
 
 .map {
-max-width: 600px;
 padding-right: 40px;
 padding-left: 40px;
 padding-top: 10px;
@@ -117,6 +137,7 @@ align-content: center;
 }
 
   }
+
 
 
 /*********************************************************************
